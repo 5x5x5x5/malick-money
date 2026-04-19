@@ -1,0 +1,97 @@
+site_name: The Way of Grace
+site_description: A meditation on markets — lessons whispered, in the voice of a film you half-remember.
+site_url: https://5x5x5x5.github.io/the-way-of-grace/
+repo_url: https://github.com/5x5x5x5/the-way-of-grace
+repo_name: 5x5x5x5/the-way-of-grace
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: brown
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: brown
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: EB Garamond
+    code: JetBrains Mono
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/voice.css
+
+nav:
+  - Prologue: index.md
+  - "I. The measurable":
+      - "Returns, and what changes without us": measurable/returns.md
+      - "How widely does a thing breathe": measurable/volatility.md
+      - "The drunkard, the photon, the stock": measurable/random-walks.md
+  - "II. The contract":
+      - "A promise you need not keep": options/contracts.md
+      - "Shapes, and the equation beneath them": options/payoffs-and-parity.md
+      - "Three men, one formula": options/black-scholes.md
+  - "III. The Greeks":
+      - "How much does the door move": greeks/delta.md
+      - "The hinge, and its curvature": greeks/gamma.md
+      - "Time takes, fear rises": greeks/theta-vega-rho.md
+  - "IV. The surface":
+      - "The market does not know tomorrow": vol-surface/implied-vol.md
+      - "Across horizons": vol-surface/term-structure.md
+      - "Fear is not symmetric": vol-surface/skew.md
+  - "V. The engine":
+      - "Someone stands opposite": regime/market-makers.md
+      - "When the engine breathes": regime/dealer-gamma.md
+      - "A single strike": regime/gamma-flip.md
+  - "VI. The measure":
+      - "Did it work, and what does 'work' mean": backtest/metrics.md
+      - "You cannot stand in tomorrow": backtest/walk-forward.md
+      - "What a label reaches for": backtest/purging-embargo.md
+      - "You tried a hundred": backtest/deflated-sharpe.md
+  - "VII. The lesson":
+      - "What is a signal worth taking": ml/labeling-problem.md
+      - "Three gates": ml/triple-barrier.md
+      - "Two questions, once": ml/meta-labeling.md
+  - "VIII. The flows":
+      - "A tape of sparks": flows/microstructure.md
+      - "The geometry of mandate": flows/event-driven.md
+      - "Credit speaks before equity": flows/cross-asset.md
