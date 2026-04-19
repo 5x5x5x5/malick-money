@@ -1,0 +1,32 @@
+/* Voiceover italics get a slightly warmer, quieter presentation.
+   Readers shouldn't need to read aloud to hear the whisper. */
+
+.md-typeset em {
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+}
+
+/* A paragraph that is entirely italics (a pure voiceover beat) gets
+   a thin amber rule on the left. Think: it's the thing the camera
+   pulls back from. */
+.md-typeset p > em:only-child {
+  display: block;
+}
+
+/* Blockquotes read as on-screen lines. Left them alone but tighter. */
+.md-typeset blockquote {
+  border-left-color: var(--md-accent-fg-color);
+}
+
+/* Figures are the film's images. Give them a little room to breathe. */
+.md-typeset figure,
+.md-typeset p:has(> img) {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* The curriculum index list, in Malick mode, reads as chapter titles. */
+.md-typeset h1 {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
