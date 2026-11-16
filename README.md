@@ -2,7 +2,7 @@
 
 The curriculum at [quant-lessons](https://github.com/5x5x5x5/quant-lessons), redirected by a different voice. Same math. Same code references. Same trading project at the end of every lesson. Everything else — the pace, the whispered asides, the image of light across a strike — rethought in Terence Malick's register.
 
-**Site:** https://5x5x5x5.github.io/the-way-of-grace/
+**Site:** https://danielsiegle.com/malick-money/
 
 ## Local development
 
