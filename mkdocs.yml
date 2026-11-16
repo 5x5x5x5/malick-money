@@ -1,8 +1,8 @@
 site_name: The Way of Grace
 site_description: A meditation on markets — lessons whispered, in the voice of a film you half-remember.
-site_url: https://5x5x5x5.github.io/the-way-of-grace/
-repo_url: https://github.com/5x5x5x5/the-way-of-grace
-repo_name: 5x5x5x5/the-way-of-grace
+site_url: https://danielsiegle.com/malick-money/
+repo_url: https://github.com/5x5x5x5/malick-money
+repo_name: 5x5x5x5/malick-money
 edit_uri: edit/main/docs/
 
 theme:
